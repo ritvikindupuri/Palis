@@ -113,9 +113,9 @@ Runtime data belongs in the local data directory. It must not be committed to th
 
 Open **http://127.0.0.1:8765/** in your browser. Keep the terminal open while using Palis. Press **Ctrl+C** in that terminal to stop it.
 
-The server must complete an actual firewall capture before startup succeeds. If collection fails or the process stops, the dashboard is unavailable and monitoring is not live.
+On a fresh installation the server needs an actual firewall capture before it can serve evidence. With saved evidence it can open the dashboard immediately while retrying collection. Saved timestamps and starting/error status do not establish live collection. If the process stops, the dashboard is unavailable.
 
-The included development background launcher uses a fixed Python path. Use the foreground command above, or update the launcher to your installed interpreter before using it. Palis does not install a boot-time service.
+The included development background launcher uses a fixed Python path. Use the foreground command above, or update the launcher to your installed interpreter before using it. Palis does not install a boot-time service. For automatic startup at sign-in and restart after a server exit, run `powershell -NoProfile -File .\install-continuous.ps1`. This registers the limited current-user task **Palis Continuous Monitor**. Its supervisor runs without a time limit and retries server exits every 20 seconds; Windows must remain awake. It does not change power settings. Stop the task and its supervisor/server processes to stop continuous mode; disable or unregister the task to prevent future automatic startup.
 
 ### 4. Set up actual specialist reviews
 
@@ -174,7 +174,7 @@ No machine-specific findings, screenshots, local program paths, or assessment PD
 
 ## Troubleshooting
 
-**The dashboard will not open.** Read the server terminal first. Confirm the Python process is running and use the exact address http://127.0.0.1:8765/. Startup collection failure prevents the server from listening.
+**The dashboard will not open.** Read the server terminal first. Confirm the Python process is running and use the exact address http://127.0.0.1:8765/. On a fresh installation, startup collection failure prevents listening; an existing installation can display its saved evidence while collection retries.
 
 **Firewall collection fails.** Run this read-only check in your own PowerShell terminal:
 

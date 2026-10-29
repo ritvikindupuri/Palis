@@ -21,7 +21,7 @@ def collect():
     args=['C:/Windows/System32/netsh.exe','advfirewall']
     p=subprocess.run(args+['show','allprofiles'],capture_output=True,text=True,check=True,timeout=15)
     current=subprocess.run(args+['show','currentprofile'],capture_output=True,text=True,check=True,timeout=15)
-    r=subprocess.run(args+['firewall','show','rule','name=all','dir=in','status=enabled','verbose'],capture_output=True,text=True,check=True,timeout=15)
+    r=subprocess.run(args+['firewall','show','rule','name=all','dir=in','status=enabled','verbose'],capture_output=True,text=True,check=True,timeout=120)
     rules=[]
     for block in r.stdout.split('Rule Name:')[1:]:
         row={'Rule Name':block.splitlines()[0].strip()}
@@ -128,7 +128,11 @@ class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header('X-Content-Type-Options','nosniff'); self.send_header('Cache-Control','no-store');self.send_header('X-Frame-Options','DENY');self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'");super().end_headers()
 if __name__=='__main__':
-    collect(); state()
+    # Keep the dashboard available during slow or failed collection. Saved
+    # evidence remains timestamped; MONITOR stays starting/error until a scan succeeds.
+    if not (DATA/'evidence.json').exists():
+        collect()
+    state()
     threading.Thread(target=monitor_loop,daemon=True).start()
     print('Exception Zero: http://127.0.0.1:8765 (local-only, read-only; Ctrl+C to stop)',flush=True)
     ThreadingHTTPServer(('127.0.0.1',8765),Handler).serve_forever()
