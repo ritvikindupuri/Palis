@@ -2,8 +2,6 @@
 
 A local Windows Firewall dashboard with three specialist agents that investigate rule exceptions, check application dependencies, and challenge findings before any change reaches you for approval.
 
-## Project description
-
 Firewall rules accumulate as applications are installed and updated. Some allow broad inbound access, some refer to development runtimes, and others serve dependencies that are easy to overlook. A rule that looks broad can still have a legitimate purpose. Removing or blocking it without understanding that purpose can break something you use.
 
 Palis brings the configuration and the review into one local dashboard. A read-only collector captures Windows Firewall profiles and enabled inbound rules. Three actual specialists—the **Exception Investigator**, **Dependency Analyst**, and **Independent Challenger**—review the evidence from different angles. Their published findings, blockers, messages, and reports stay tied to the evidence they actually reviewed.
