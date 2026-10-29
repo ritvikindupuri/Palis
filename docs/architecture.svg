@@ -1,36 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1040" viewBox="0 0 1300 1040">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#9ca3af"/></marker>
-<style>text{font-family:Arial,sans-serif;fill:#252b38} .title{font-size:26px;font-weight:700}.name{font-size:18px;font-weight:700}.desc{font-size:15px;fill:#536175}.note{font-size:16px}.line{fill:none;stroke:#9ca3af;stroke-width:2.5}.call{fill:#fff8ef;stroke:#ffb477}.num{fill:#c44d09;font-weight:700}</style></defs>
-<rect width="1300" height="1040" fill="white"/>
-<text x="650" y="48" text-anchor="middle" class="title">How Palis reviews your Windows Firewall</text>
-<g transform="translate(650 98)" fill="#6b7280"><circle r="12"/><path d="M-23 36C-23 9 23 9 23 36Z"/></g>
-<text x="650" y="161" text-anchor="middle" class="name">You</text>
-<path d="M650 178V232" class="line" marker-end="url(#arrow)"/>
-<rect x="692" y="181" width="335" height="42" rx="12" class="call"/><text x="707" y="208" class="note"><tspan class="num">1.</tspan> Start local collection and request a review</text>
-<g transform="translate(650 270)" fill="none" stroke="#138d80" stroke-width="4"><path d="M-25-25L0-35L25-25V0Q25 24 0 38Q-25 24-25 0Z"/><path d="M-12-12H12V12H-12ZM0-12V12M-12 0H12"/></g>
-<text x="650" y="332" text-anchor="middle" class="name">Windows Firewall + local collector</text>
-<text x="650" y="359" text-anchor="middle" class="desc">Read-only inventory · exact evidence snapshot</text>
-<path d="M650 378V455M245 455H1055M245 455V489M650 455V489M1055 455V489" class="line"/>
-<rect x="692" y="393" width="440" height="42" rx="12" class="call"/><text x="707" y="420" class="note"><tspan class="num">2.</tspan> Three actual specialists review the same evidence</text>
-<path d="M245 478V489" class="line" marker-end="url(#arrow)"/><path d="M650 478V489" class="line" marker-end="url(#arrow)"/><path d="M1055 478V489" class="line" marker-end="url(#arrow)"/>
-<svg x="205" y="495" width="80" height="80" viewBox="0 0 48 48" fill="none"><title>Investigator</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#17332F"/><circle cx="21" cy="21" r="10" stroke="#75DEC5" stroke-width="2.5"/><path d="m28.5 28.5 8 8" stroke="#75DEC5" stroke-width="3" stroke-linecap="round"/><path d="M16 21h10m-10 4h6m-6-8h7" stroke="#B5EDE1" stroke-width="1.5" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1500" viewBox="0 0 1500 1500"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#9ca3af"/></marker><style>text{font-family:Arial,sans-serif;fill:#252b38}.title{font-size:32px;font-weight:700}.name{font-size:23px;font-weight:700}.desc{font-size:19px;fill:#536175}.note{font-size:19px}.line{fill:none;stroke:#9ca3af;stroke-width:3}.call{fill:#fff8ef;stroke:#ffb477}.num{fill:#c44d09;font-weight:700}</style></defs><rect width="1500" height="1500" fill="white"/>
+<text x="750" y="64" text-anchor="middle" class="title">How Palis reviews your Windows Firewall</text>
+<g transform="translate(750 130)" fill="#6b7280"><circle r="15"/><path d="M-28 45C-28 10 28 10 28 45Z"/></g>
+<text x="750" y="211" text-anchor="middle" class="name">You</text>
+<path d="M750 235V355" class="line" marker-end="url(#arrow)"/>
+<rect x="825" y="250" width="600" height="84" rx="14" class="call"/><text x="849" y="283" class="note"><tspan class="num">1.</tspan> Start local collection and request a review</text><text x="875" y="312" class="desc">Actual local evidence; no settings changed</text>
+<image x="702" y="375" width="96" height="96" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,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"/>
+<text x="750" y="514" text-anchor="middle" class="name">Windows Firewall + local collector</text>
+<text x="750" y="548" text-anchor="middle" class="desc">Read-only inventory · exact evidence snapshot</text>
+<path d="M750 575V735" class="line"/>
+<rect x="825" y="600" width="600" height="84" rx="14" class="call"/><text x="849" y="633" class="note"><tspan class="num">2.</tspan> Three specialists review the same evidence</text><text x="875" y="662" class="desc">Purpose · dependencies · independent challenge</text>
+<path d="M250 735H1250" class="line"/>
+<path d="M250 735V785" class="line" marker-end="url(#arrow)"/>
+<svg x="202" y="810" width="96" height="96" viewBox="0 0 48 48" fill="none"><title>Investigator</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#17332F"/><circle cx="21" cy="21" r="10" stroke="#75DEC5" stroke-width="2.5"/><path d="m28.5 28.5 8 8" stroke="#75DEC5" stroke-width="3" stroke-linecap="round"/><path d="M16 21h10m-10 4h6m-6-8h7" stroke="#B5EDE1" stroke-width="1.5" stroke-linecap="round"/></svg>
 
-<svg x="610" y="495" width="80" height="80" viewBox="0 0 48 48" fill="none"><title>Dependency Analyst</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#1C2D43"/><path d="m15 15 18 1m-18-1 8 19m10-18-10 18" stroke="#73AEEA" stroke-width="2"/><circle cx="14" cy="14" r="5" fill="#1C2D43" stroke="#94C5FA" stroke-width="2"/><circle cx="34" cy="16" r="4" fill="#73AEEA"/><circle cx="23" cy="34" r="5" fill="#1C2D43" stroke="#94C5FA" stroke-width="2"/><circle cx="24" cy="24" r="2" fill="#B4D9FD"/></svg>
+<text x="250" y="953" text-anchor="middle" class="name">Exception Investigator</text>
+<text x="250" y="988" text-anchor="middle" class="desc">Rule purpose and ownership</text>
+<path d="M250 1018V1065" class="line"/>
+<path d="M750 735V785" class="line" marker-end="url(#arrow)"/>
+<svg x="702" y="810" width="96" height="96" viewBox="0 0 48 48" fill="none"><title>Dependency Analyst</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#1C2D43"/><path d="m15 15 18 1m-18-1 8 19m10-18-10 18" stroke="#73AEEA" stroke-width="2"/><circle cx="14" cy="14" r="5" fill="#1C2D43" stroke="#94C5FA" stroke-width="2"/><circle cx="34" cy="16" r="4" fill="#73AEEA"/><circle cx="23" cy="34" r="5" fill="#1C2D43" stroke="#94C5FA" stroke-width="2"/><circle cx="24" cy="24" r="2" fill="#B4D9FD"/></svg>
 
-<svg x="1015" y="495" width="80" height="80" viewBox="0 0 48 48" fill="none"><title>Independent Challenger</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#342B23"/><path d="m24 10 12 5v10c0 7-5 11-12 15-7-4-12-8-12-15V15l12-5Z" stroke="#ECB37A" stroke-width="2"/><path d="m18 24 4 4 8-9" stroke="#F4CAA2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<text x="750" y="953" text-anchor="middle" class="name">Dependency Analyst</text>
+<text x="750" y="988" text-anchor="middle" class="desc">Dependencies and impact</text>
+<path d="M750 1018V1065" class="line"/>
+<path d="M1250 735V785" class="line" marker-end="url(#arrow)"/>
+<svg x="1202" y="810" width="96" height="96" viewBox="0 0 48 48" fill="none"><title>Independent Challenger</title><rect x="2" y="2" width="44" height="44" rx="13" fill="#342B23"/><path d="m24 10 12 5v10c0 7-5 11-12 15-7-4-12-8-12-15V15l12-5Z" stroke="#ECB37A" stroke-width="2"/><path d="m18 24 4 4 8-9" stroke="#F4CAA2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 
-<text x="245" y="606" text-anchor="middle" class="name">Exception Investigator</text>
-<text x="245" y="635" text-anchor="middle" class="desc">Rule purpose and ownership</text>
-<text x="650" y="606" text-anchor="middle" class="name">Dependency Analyst</text>
-<text x="650" y="635" text-anchor="middle" class="desc">Application dependencies and impact</text>
-<text x="1055" y="606" text-anchor="middle" class="name">Independent Challenger</text>
-<text x="1055" y="635" text-anchor="middle" class="desc">Evidence gaps and peer challenge</text>
-<path d="M245 661V713H1055V661M650 661V766" class="line" marker-end="url(#arrow)"/>
-<rect x="692" y="730" width="460" height="58" rx="12" class="call"/><text x="707" y="754" class="note"><tspan class="num">3.</tspan> Publish findings and evidence-bound reports</text><text x="726" y="777" class="desc">Proposals need a justified target and three exact reviews</text>
-<rect x="465" y="787" width="370" height="67" rx="13" fill="#f8fafc" stroke="#d1d5db" stroke-width="2"/>
-<text x="650" y="815" text-anchor="middle" class="name">Local dashboard + PDF reports</text><text x="650" y="840" text-anchor="middle" class="desc">Findings · blockers · proposed action, if justified</text>
-<path d="M650 854V917" class="line" marker-end="url(#arrow)"/>
-<rect x="692" y="870" width="440" height="55" rx="12" class="call"/><text x="707" y="894" class="note"><tspan class="num">4.</tspan> You decide: BLOCK or UNBLOCK + Windows UAC</text><text x="726" y="915" class="desc">Only a narrowly scoped Palis-owned rule can change</text>
-<text x="650" y="958" text-anchor="middle" class="name">Human-approved action + verified result</text>
-<text x="650" y="997" text-anchor="middle" class="desc">Collection runs locally. Specialists run separately. No automatic threat blocking.</text>
+<text x="1250" y="953" text-anchor="middle" class="name">Independent Challenger</text>
+<text x="1250" y="988" text-anchor="middle" class="desc">Evidence gaps and peer challenge</text>
+<path d="M1250 1018V1065" class="line"/>
+<path d="M250 1065H1250" class="line"/>
+<path d="M750 1065V1200" class="line" marker-end="url(#arrow)"/>
+<rect x="825" y="1090" width="600" height="84" rx="14" class="call"/><text x="849" y="1123" class="note"><tspan class="num">3.</tspan> Publish findings and evidence-bound reports</text><text x="875" y="1152" class="desc">A proposal needs justification and three exact reviews</text>
+<rect x="450" y="1225" width="600" height="100" rx="18" fill="#f8fafc" stroke="#d1d5db" stroke-width="2"/>
+<text x="750" y="1266" text-anchor="middle" class="name">Local dashboard + PDF reports</text>
+<text x="750" y="1301" text-anchor="middle" class="desc">Findings · blockers · proposed action, if justified</text>
+<path d="M750 1325V1430" class="line" marker-end="url(#arrow)"/>
+<rect x="825" y="1340" width="600" height="84" rx="14" class="call"/><text x="849" y="1373" class="note"><tspan class="num">4.</tspan> You decide: BLOCK or UNBLOCK + Windows UAC</text><text x="875" y="1402" class="desc">Only an exact Palis-owned rule may change</text>
+<text x="750" y="1470" text-anchor="middle" class="name">Human-approved action · result verified or uncertainty reported</text>
 </svg>

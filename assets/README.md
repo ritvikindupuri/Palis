@@ -1,9 +1,7 @@
-# Aegivra identity
+# Palis assets
 
-Original vector identity for this local firewall intelligence app. The angular A within a perimeter shield pairs with a custom Windows Firewall icon. The firewall asset is an original illustration, not an official Microsoft logo.
+Palis product identity and the three specialist icons match the local dashboard.
 
-- aegivra-icon.svg: app mark and favicon
-- aegivra-logo.svg: wordmark on transparent background for dark surfaces
-- windows-firewall.svg: custom firewall diagram icon
+windows-firewall-official.png is the Windows Firewall Control Panel icon extracted from Microsoft Windows System32/FirewallControlPanel.dll, icon index 0. Microsoft retains rights to its Windows imagery; it identifies Windows Firewall and does not imply endorsement.
 
-No evidence, metrics, agent findings or firewall settings are changed by branding.
+windows-firewall.svg is the older custom illustration used by the dashboard. The README architecture diagram uses the Microsoft icon embedded directly, preserving its square aspect ratio.

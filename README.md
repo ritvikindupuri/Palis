@@ -35,7 +35,7 @@ The full proposal contract, review receipts, execution checks, and rollback cond
 ## Architecture
 
 <p align="center">
-  <img src="docs/architecture.svg" alt="Palis flow from local Windows Firewall collection through three specialist reviews to reports and human-approved action" width="1000">
+  <img src="docs/architecture.png" alt="Palis flow from local Windows Firewall collection through three specialist reviews to reports and human-approved action" width="1000">
 </p>
 <p align="center"><b>Figure 1. How Palis reviews your Windows Firewall</b></p>
 
